@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@android:color/white">
+
+  <TextView
+    android:id="@+id/topView"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#f00"
+    android:text="고정영역"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.constraintlayout.motion.widget.MotionLayout
+    android:id="@+id/pdfScrollMotionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layoutDescription="@xml/pdf_viewer_scroll"
+    app:layout_constraintBottom_toTopOf="@id/bottomButton"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/topView">
+
+    <TextView
+      android:id="@+id/movingView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#ff0"
+      android:text="pdf를 위로 드래그 할 때 움직여야 하는 영역\n111\n2222\n3333\n4444\n55555\n6666\n7777\n8888\n9999"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <com.github.barteksc.pdfviewer.PDFView
+      android:id="@+id/pdfViewer"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/movingView"
+      tools:background="#00f" />
+  </androidx.constraintlayout.motion.widget.MotionLayout>
+
+  <Button
+    android:id="@+id/bottomButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="하단 고정 버튼"
+    app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
