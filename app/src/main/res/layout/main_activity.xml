@@ -45,6 +45,26 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@id/movingView"
       tools:background="#00f" />
+
+    <!--        <com.pdfview.PDFView-->
+    <!--          android:id="@+id/pdfViewer"-->
+    <!--          android:layout_width="match_parent"-->
+    <!--          android:layout_height="0dp"-->
+    <!--          app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--          app:layout_constraintEnd_toEndOf="parent"-->
+    <!--          app:layout_constraintStart_toStartOf="parent"-->
+    <!--          app:layout_constraintTop_toBottomOf="@id/movingView"-->
+    <!--          tools:background="#00f" />-->
+
+    <!--    <com.rajat.pdfviewer.PdfRendererView-->
+    <!--      android:id="@+id/pdfViewer"-->
+    <!--      android:layout_width="match_parent"-->
+    <!--      android:layout_height="0dp"-->
+    <!--      app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--      app:layout_constraintEnd_toEndOf="parent"-->
+    <!--      app:layout_constraintStart_toStartOf="parent"-->
+    <!--      app:layout_constraintTop_toBottomOf="@id/movingView"-->
+    <!--      tools:background="#00f" />-->
   </androidx.constraintlayout.motion.widget.MotionLayout>
 
   <Button

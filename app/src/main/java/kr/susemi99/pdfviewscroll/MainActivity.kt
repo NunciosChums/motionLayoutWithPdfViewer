@@ -1,8 +1,7 @@
 package kr.susemi99.pdfviewscroll
 
-import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kr.susemi99.pdfviewscroll.databinding.MainActivityBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,5 +17,9 @@ class MainActivity : AppCompatActivity() {
       .autoSpacing(true)
       .enableAntialiasing(true)
       .load()
+
+//    binding.pdfViewer.fromAsset("hola_isic_card.pdf").show()
+
+//    binding.pdfViewer.initWithUrl("https://www.hyundaicard.com/images/popup/p_DB.pdf")
   }
 }
